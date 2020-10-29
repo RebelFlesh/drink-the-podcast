@@ -4,4 +4,4 @@ const Podcasts = () => (
   <PodcastsPage /> 
 );
 
-export default PodcastsPage;
+export default Podcasts;
