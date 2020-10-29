@@ -1,12 +1,7 @@
-import PageLayout from '../src/page-layout';
-import styles from '../styles/Home.module.css'
+import HomePage from '../src/home-page'
 
-const HomePage = () => (
-  <PageLayout>
-    <h1 className={styles.title}>
-        Welcome to a hello world
-    </h1>
-  </PageLayout> 
-)
+const Home = () => (
+  <HomePage /> 
+);
 
-export default HomePage;
+export default Home;
