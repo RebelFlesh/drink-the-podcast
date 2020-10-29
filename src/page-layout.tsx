@@ -1,5 +1,8 @@
-import Head from 'next/head'
-import styles from '../styles/Home.module.css'
+import Head from 'next/head';
+
+import styles from '../styles/Home.module.css';
+import Header from './components/header';
+import Footer from './components/footer';
 
 const PageLayout = ({title = 'Drink up', children}) => (
     <>
@@ -7,15 +10,11 @@ const PageLayout = ({title = 'Drink up', children}) => (
             <title>{title}</title>
             <link rel="icon" href="/favicon.ico" />
         </Head>
-        <nav className={styles.header}>
-            {'Header links'}
-        </nav>
+        <Header />
         <main className={styles.main}>
             {children}
         </main>
-        <footer className={styles.footer}>
-            {'Footer links'}
-        </footer>
+        <Footer />
   </>
 )
 
