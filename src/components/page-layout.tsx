@@ -1,8 +1,17 @@
 import Head from 'next/head';
+import styled from 'styled-components';
 
-import styles from '../styles/Home.module.css';
 import Header from './header';
 import Footer from './footer';
+
+const StyledMain = styled.main`
+    padding: 5rem 0;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+`;
 
 const PageLayout = ({title = 'Drink up', children}) => (
     <>
@@ -11,9 +20,9 @@ const PageLayout = ({title = 'Drink up', children}) => (
             <link rel="icon" href="/favicon.ico" />
         </Head>
         <Header />
-        <main className={styles.main}>
+        <StyledMain>
             {children}
-        </main>
+        </StyledMain>
         <Footer />
   </>
 )

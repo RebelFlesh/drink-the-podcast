@@ -1,12 +1,20 @@
-import PageLayout from './components/page-layout';
-import styles from '../styles/Home.module.css'
+import styled from 'styled-components'
 
-const HomePage = () => (
+import PageLayout from './components/page-layout';
+
+const StyledH1 = styled.h1`
+  margin: 0;
+  line-height: 1.15;
+  font-size: 4rem;
+  text-align: center;
+`;
+
+const PodcastsPage = () => (
   <PageLayout>
-    <h1 className={styles.title}>
+    <StyledH1>
         Welcome to a List of Podcasts
-    </h1>
+    </StyledH1>
   </PageLayout> 
 )
 
-export default HomePage;
+export default PodcastsPage;

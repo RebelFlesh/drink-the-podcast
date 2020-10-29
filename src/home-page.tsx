@@ -1,11 +1,19 @@
+import styled from 'styled-components'
+
 import PageLayout from './components/page-layout';
-import styles from '../styles/Home.module.css'
+
+const StyledH1 = styled.h1`
+  margin: 0;
+  line-height: 1.15;
+  font-size: 4rem;
+  text-align: center;
+`;
 
 const HomePage = () => (
   <PageLayout>
-    <h1 className={styles.title}>
+    <StyledH1>
         Welcome to a hello world
-    </h1>
+    </StyledH1>
   </PageLayout> 
 )
 
